@@ -1,6 +1,6 @@
 /**
  * Dynamic Invert Cursor Styles
- * Version: 1.0.0
+ * Version: 27.10.2025
  */
 
 /* Hide default cursor */
@@ -13,13 +13,13 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 30px;
-    height: 30px;
+    width: 15px;
+    height: 15px;
     border-radius: 50%;
-    background-color: #000;
-    mix-blend-mode: difference;
+    background-color: #fff;
+    mix-blend-mode: exclusion;
     pointer-events: none;
-    z-index: 9999;
+    z-index: 99999999999;
     transform: translate(-50%, -50%);
     transition: width 0.3s ease, height 0.3s ease, opacity 0.3s ease;
     will-change: transform, width, height;
@@ -27,18 +27,18 @@
 
 /* Size variations for different elements */
 .custom-cursor.hover-link {
-    width: 22.5px;  /* 25% smaller */
-    height: 22.5px;
+    width: 11.25px;  /* 25% smaller */
+    height: 11.25px;
 }
 
 .custom-cursor.hover-button {
-    width: 19.5px;  /* 35% smaller */
-    height: 19.5px;
+    width: 9.75px;  /* 35% smaller */
+    height: 9.75px;
 }
 
 .custom-cursor.hover-input {
-    width: 15px;    /* 50% smaller */
-    height: 15px;
+    width: 7.5px;    /* 50% smaller */
+    height: 7.5px;
 }
 
 /* Cursor trail effect (optional enhancement) */
@@ -52,7 +52,7 @@
     background-color: #000;
     mix-blend-mode: difference;
     pointer-events: none;
-    z-index: 9998;
+    z-index: 99999999999;
     opacity: 0.3;
     transform: translate(-50%, -50%);
     transition: opacity 0.5s ease;
