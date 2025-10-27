@@ -1,6 +1,6 @@
 /**
  * Dynamic Invert Cursor JavaScript
- * Version: 1.0.0
+ * Version: 27.10.2025
  */
 
 (function() {
@@ -8,11 +8,11 @@
     
     // Configuration
     const config = {
-        cursorSize: 30,
+        cursorSize: 15,
         linkScale: 0.75,      // 25% smaller
         buttonScale: 0.65,    // 35% smaller
         inputScale: 0.5,      // 50% smaller
-        easing: 0.15,         // Smooth follow effect
+        easing: 0.5,         // Smooth follow effect
         trailEnabled: false   // Set to true for trail effect
     };
     
