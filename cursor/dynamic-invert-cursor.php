@@ -3,11 +3,9 @@
  * Plugin Name: Dynamic Invert Cursor
  * Plugin URI: https://github.com/StefanusHosea/playground
  * Description: A custom cursor with invert effect that changes size dynamically based on element interactions
- * Version: 1.0.0
- * Author: StefanusHosea
+ * Version: 27.10.2025
+ * Author: hello@stefanushosea.com
  * Author URI: https://github.com/StefanusHosea
- * License: GPL v2 or later
- * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: dynamic-invert-cursor
  */
 
@@ -21,7 +19,7 @@ class Dynamic_Invert_Cursor {
     /**
      * Plugin version
      */
-    const VERSION = '1.0.0';
+    const VERSION = '27.10.2025';
     
     /**
      * Option name
@@ -33,12 +31,12 @@ class Dynamic_Invert_Cursor {
      */
     private $defaults = array(
         'enabled' => true,
-        'cursor_size' => 30,
-        'link_size' => 22.5,
-        'button_size' => 19.5,
-        'input_size' => 15,
+        'cursor_size' => 15,
+        'link_size' => 11.25,
+        'button_size' => 9.75,
+        'input_size' => 7.5,
         'smooth_enabled' => true,
-        'smooth_speed' => 0.15,
+        'smooth_speed' => 0.5,
     );
     
     /**
@@ -205,7 +203,7 @@ class Dynamic_Invert_Cursor {
                         <th scope="row">Idle Cursor Size</th>
                         <td>
                             <input type="number" name="<?php echo self::OPTION_NAME; ?>[cursor_size]" value="<?php echo esc_attr($settings['cursor_size']); ?>" min="5" max="100" step="1">
-                            <p class="description">Default cursor size when not hovering any element (default: 30px)</p>
+                            <p class="description">Default cursor size when not hovering any element (default: 15px)</p>
                         </td>
                     </tr>
                     
@@ -213,7 +211,7 @@ class Dynamic_Invert_Cursor {
                         <th scope="row">Link Hover Size</th>
                         <td>
                             <input type="number" name="<?php echo self::OPTION_NAME; ?>[link_size]" value="<?php echo esc_attr($settings['link_size']); ?>" min="5" max="100" step="0.5">
-                            <p class="description">Cursor size when hovering links (default: 22.5px - 25% smaller)</p>
+                            <p class="description">Cursor size when hovering links (default: 11.25px - 25% smaller)</p>
                         </td>
                     </tr>
                     
@@ -221,7 +219,7 @@ class Dynamic_Invert_Cursor {
                         <th scope="row">Button Hover Size</th>
                         <td>
                             <input type="number" name="<?php echo self::OPTION_NAME; ?>[button_size]" value="<?php echo esc_attr($settings['button_size']); ?>" min="5" max="100" step="0.5">
-                            <p class="description">Cursor size when hovering buttons (default: 19.5px - 35% smaller)</p>
+                            <p class="description">Cursor size when hovering buttons (default: 9.75px - 35% smaller)</p>
                         </td>
                     </tr>
                     
@@ -229,7 +227,7 @@ class Dynamic_Invert_Cursor {
                         <th scope="row">Input Hover Size</th>
                         <td>
                             <input type="number" name="<?php echo self::OPTION_NAME; ?>[input_size]" value="<?php echo esc_attr($settings['input_size']); ?>" min="5" max="100" step="0.5">
-                            <p class="description">Cursor size when hovering input fields (default: 15px - 50% smaller)</p>
+                            <p class="description">Cursor size when hovering input fields (default: 7.5px - 50% smaller)</p>
                         </td>
                     </tr>
                     
@@ -254,7 +252,7 @@ class Dynamic_Invert_Cursor {
                         <th scope="row">Smooth Tracking Speed</th>
                         <td>
                             <input type="number" name="<?php echo self::OPTION_NAME; ?>[smooth_speed]" value="<?php echo esc_attr($settings['smooth_speed']); ?>" min="0.01" max="1" step="0.01">
-                            <p class="description">Higher value = faster tracking. Range: 0.01 to 1 (default: 0.15)</p>
+                            <p class="description">Higher value = faster tracking. Range: 0.01 to 1 (default: 0.5)</p>
                             <p class="description"><strong>Recommended values:</strong> Slow: 0.08 | Medium: 0.15 | Fast: 0.3 | Instant: 1</p>
                         </td>
                     </tr>
